@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de formulario</title>
+</head>
+
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Primera parte</legend>
+            <button name="boton">Botón</button>
+            <br />
+            <textarea name="areaTexto" rows="10" cols="20" minlength="10" maxlength="30"
+                placeholder="Aquí puedes escribir" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Segunda parte</legend>
+            <label>Elige una opción:</label>
+            <select name="elegir" required>
+                <optgroup label="Grupo 1">
+                    <option>Opción 1</option>
+                    <option disabled>Opción 2</option>
+                </optgroup>
+                <optgroup label="Grupo 2">
+                    <option selected>Opción 3</option>
+                    <option>Opción 4</option>
+                </optgroup>
+            </select>
+
+            <br />
+            <label>Introduce tu nombre:</label>
+            <input type="text" name="textoCorto" required />
+
+            <br />
+            <label>Introduce número de teléfono:</label>
+            <input type="tel" name="telefono" minlength="9" maxlength="9" />
+
+            <br />
+            <label>Introduce tu correo electrónico:</label>
+            <input type="email" name="correo" />
+
+            <br />
+            <label>Introduce un número:</label>
+            <input type="number" name="numero" />
+
+            <br />
+            <label>Introduce una contraseña:</label>
+            <input type="password" name="contraseña" minlength="8" required />
+
+            <br />
+            <input type="reset" value="Resetear" />
+            <input type="submit" value="Enviar datos" />
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Tercera parte</legend>
+
+            <label>Color:</label>
+            <input type="color" name="color" />
+
+            <br />
+            <label>Fecha y hora:</label>
+            <input type="date" name="fecha" />
+            <input type="time" name="hora" />
+            <input type="datetime-local" name="fechayhora" />
+
+            <br />
+            <input type="range" name="rango" min="0" max="100" value="30" step="10" />
+
+            <br />
+            <input type="file" name="archivo" accept=".pdf" />
+
+            <br />
+            <label>Selecciona una o varias opciones:</label>
+            <label>
+                Opción 1
+                <input type="checkbox" name="elegir" />
+            </label>
+            <label>
+                Opción 2
+                <input type="checkbox" name="elegir" />
+            </label>
+            <label>
+                Opción 3
+                <input type="checkbox" name="elegir" />
+            </label>
+
+            <br />
+            <label>Selecciona solo una opción:</label>
+            <label>
+                Opción 1
+                <input type="radio" name="elegir" />
+            </label>
+            <label>
+                Opción 2
+                <input type="radio" name="elegir" />
+            </label>
+            <label>
+                Opción 3
+                <input type="radio" name="elegir" />
+            </label>
+
+        </fieldset>
+    </form>
+
+    <progress></progress>
+    <progress min="0" max="100" value="75"></progress>
+
+    <br/>
+    <meter min="0" max="10" value="3" low="5" high="8" optimum="10"></meter>
+    <meter min="0" max="10" value="7" low="5" high="8" optimum="10"></meter>
+    <meter min="0" max="10" value="9" low="5" high="8" optimum="10"></meter>
+
+</body>
+
+</html>
